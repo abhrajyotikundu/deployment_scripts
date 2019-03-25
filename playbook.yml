@@ -2,7 +2,7 @@
 - hosts: all
   vars:
     - username: Name
-	- access: grant
+    - access: grant
   tasks:
     - name: multiline shell command
       shell: sh ssh_access_control.sh {{ access }} {{ username }}

@@ -1,13 +1,13 @@
-export user = $2
+export user=$2
 
 if [ $# -eq 2 ];
 then
 if [ $1 = "grant" ];
 then
-search_str = "AllowUsers"
-else if [ $1 = "revoke" ];
+search_str="AllowUsers"
+elif [ $1 = "revoke" ];
 then
-search_str = "DenyUsers"
+search_str="DenyUsers"
 else
 echo "Invalid parameters passed: Please use the script as per below example"
 echo "sh ssh_access_control.sh (grant|revoke) username"
